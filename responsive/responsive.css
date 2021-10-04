@@ -1,22 +1,35 @@
 body {
   background-color: aqua;
 }
-h1 {
-  font-family: inherit;
+
+.comic {
+  background: url("https://imgs.xkcd.com/comics/self_description.png");
+  height: 180px;
+  width: 745px;
 }
 
-@media screen and (min-width: 480px;) {
-  body {
-    background-color: lightgreen;
+@media screen and (min-width: 1200px) {
+  .comic {
+    background: url("https://imgs.xkcd.com/comics/self_description.png");
+    width: 250px;
+    height: 180px;
   }
 }
 
-@media screen and (max-width: 1000px) {
-  h1 {
-    font-family: "Arial";
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .comic {
+    background: url("https://imgs.xkcd.com/comics/self_description.png");
+    min-width: 250px;
+    max-width: 500px;
+    height: 180px;
   }
 }
 
-.image {
-  background: url("https://i.ytimg.com/vi/5pvYbGY_m5s/hqdefault.jpg");
+@media screen and (max-width: 800px) {
+  .comic {
+    background: url("https://imgs.xkcd.com/comics/self_description.png");
+    min-width: 500px;
+    max-width: 750px;
+    height: 180px;
+  }
 }
