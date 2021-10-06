@@ -1,35 +1,28 @@
-body {
-  background-color: aqua;
-}
-
 .comic {
-  background: url("https://imgs.xkcd.com/comics/self_description.png");
+  width: 740px;
   height: 180px;
-  width: 745px;
+  background: url(https://imgs.xkcd.com/comics/self_description.png) 0 0;
 }
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-device-width: 0px) and (max-device-width: 320px) {
   .comic {
-    background: url("https://imgs.xkcd.com/comics/self_description.png");
-    width: 250px;
+    width: 740px;
     height: 180px;
+    background: url(https://imgs.xkcd.com/comics/self_description.png) 0 0;
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1200px) {
+@media screen and (min-device-width: 320px) and (max-device-width: 500px) {
   .comic {
-    background: url("https://imgs.xkcd.com/comics/self_description.png");
-    min-width: 250px;
-    max-width: 500px;
+    width: 740px;
     height: 180px;
+    background: url(https://imgs.xkcd.com/comics/self_description.png) 0 0;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-device-width: 500px) and (max-device-width: 745px) {
   .comic {
-    background: url("https://imgs.xkcd.com/comics/self_description.png");
-    min-width: 500px;
-    max-width: 750px;
+    width: 740px;
     height: 180px;
+    background: url(https://imgs.xkcd.com/comics/self_description.png) 0 0;
   }
 }
