@@ -20,20 +20,51 @@
           "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
         background-color: crimson;
       }
+      #Breakfast {
+        border: 3px solid black;
+        float: right;
+        
+        background-color: white;
+        
+        padding-right: calc(var(--bs-gutter-x) *0); 
+
+      }
+      #Lunch {
+        border: 3px solid black;
+        float: right;
+        
+        background-color: white;
+        
+        padding-right: calc(var(--bs-gutter-x) *0);
+      }
+      #Dinner {
+        border: 3px solid black;
+        float: right;
+        
+        background-color: white;
+        
+        padding-right: calc(var(--bs-gutter-x) *0);
+      }
       #col1 {
         background-color: maroon;
         background-image: linear-gradient(blue, purple);
         margin-right: 15px;
+        padding-right: 0;
       }
       #col2 {
         background-color: mediumpurple;
         background-image: linear-gradient(red, yellow);
         margin-right: 15px;
+        padding-right: 0;
+      }
+      .col4{
+          width: auto;
       }
       #col3 {
         background-color: rgba(128, 0, 0, 0.795);
         background-image: linear-gradient(orange, white);
         margin-right: 15px;
+        padding-right: 0;
       }
       @media screen and (min-width: 768px) and (max-width: 991px) {
         #col3 {
@@ -77,18 +108,21 @@
     <div class="container">
       <div class="row">
         <div class="col" id="col1">
-          Breakfast: We offer a plethora of breakfast items including pancakes,
-          french toast, omletes, and cereal.
+          <div class="col-4" id="Breakfast">Breakfast</div>
+          <br>We offer a plethora of breakfast items including pancakes, french
+          toast, omletes, and cereal.</br>
         </div>
         <div class="col" id="col2">
-          Lunch: Our lunch menu conists of a delicious variety of custom
-          sandwhiches, custom salads, and custom soups, just ask the chef what
-          you want and he will make it!
+          <div class="col-4" id="Lunch">Lunch</div>
+          <br>Our lunch menu conists of a delicious variety of custom sandwhiches,
+          custom salads, and custom soups, just ask the chef what you want and
+          he will make it!</br>
         </div>
         <div class="col" id="col3">
-          Dinner: Everynight we serve our A5 Wagyu Kobe beef with a side of
-          spring greens, tender chicken breast with a mash, or a lobster toasted
-          to perfection served with crisp potatos.
+          <div class="col-4" id="Dinner">Dinner</div>
+          <br>Everynight we serve our A5 Wagyu Kobe beef with a side of spring
+          greens, tender chicken breast with a mash, or a lobster toasted to
+          perfection served with crisp potatos.</br>
         </div>
       </div>
     </div>
