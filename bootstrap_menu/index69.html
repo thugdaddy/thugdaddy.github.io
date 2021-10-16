@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <style>
+      h1 {
+        text-align: center;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        background-color: crimson;
+      }
+      #col1 {
+        background-color: maroon;
+        background-image: linear-gradient(blue, purple);
+        margin-right: 15px;
+      }
+      #col2 {
+        background-color: mediumpurple;
+        background-image: linear-gradient(red, yellow);
+        margin-right: 15px;
+      }
+      #col3 {
+        background-color: rgba(128, 0, 0, 0.795);
+        background-image: linear-gradient(orange, white);
+        margin-right: 15px;
+      }
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        #col3 {
+          flex: auto;
+          width: 100%;
+          margin-top: 15px;
+          background-image: linear-gradient(green, yellow);
+        }
+        #col2 {
+          background-image: linear-gradient(grey, blue);
+        }
+        #col1 {
+          background-image: linear-gradient(pink, white);
+        }
+      }
+      @media screen and (max-width: 768px) {
+        #col3 {
+          flex: auto;
+          width: 100%;
+          margin-top: 15px;
+          background-image: linear-gradient(green, red);
+        }
+        #col2 {
+          margin-top: 15px;
+          flex: auto;
+          width: 100%;
+          background-image: linear-gradient(orange, purple);
+        }
+        #col1 {
+          flex: auto;
+          width: 100%;
+          background-image: linear-gradient(green, yellow);
+        }
+      }
+    </style>
+
+    <title>Genesis</title>
+  </head>
+  <body>
+    <h1>Our Menu</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col" id="col1">
+          Breakfast: We offer a plethora of breakfast items including pancakes,
+          french toast, omletes, and cereal.
+        </div>
+        <div class="col" id="col2">
+          Lunch: Our lunch menu conists of a delicious variety of custom
+          sandwhiches, custom salads, and custom soups, just ask the chef what
+          you want and he will make it!
+        </div>
+        <div class="col" id="col3">
+          Dinner: Everynight we serve our A5 Wagyu Kobe beef with a side of
+          spring greens, tender chicken breast with a mash, or a lobster toasted
+          to perfection served with crisp potatos.
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
